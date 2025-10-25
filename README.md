@@ -27,3 +27,20 @@ python scripts/summarize_amounts.py data/sample.csv
 ```text
 Total amount: 3950.00
 ```
+
+### 3. Sum sales across multiple CSV files
+To total the `amount` column across every CSV in the `data/` directory, run:
+```bash
+python tools/sum_sales.py
+```
+
+Use the optional arguments to narrow down the files being processed:
+
+```bash
+python tools/sum_sales.py --pattern "*_sales.csv" --data-dir data/2024
+```
+
+Example output:
+```text
+Total sales: 3,950.00
+```
