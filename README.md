@@ -34,6 +34,12 @@ To total the `amount` column across every CSV in the `data/` directory, run:
 python tools/sum_sales.py
 ```
 
+Use the optional arguments to narrow down the files being processed:
+
+```bash
+python tools/sum_sales.py --pattern "*_sales.csv" --data-dir data/2024
+```
+
 Example output:
 ```text
 Total sales: 3,950.00
